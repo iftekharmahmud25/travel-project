@@ -47,9 +47,243 @@ nav ul li {
 }
 /* nav styles ends here */
 
+/* Banner styles start from here */
+
+.banner {
+  background-image: url("./images/Group\ 13\ \(1\)\ \(1\).png");
+  background-size: cover;
+  background-position: center;
+  margin-top: 40px;
+  height: 400px;
+}
+.banner h1 {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  font-size: 50px;
+  color: white;
+  font-weight: bolder;
+}
+.banner p {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  font-size: 20px;
+  color: white;
+  font-weight: bolder;
+}
+
+.banner .button {
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px 20px;
+}
+.btn {
+  padding: 15px 25px;
+  border: none;
+  margin-right: 5px;
+  border-radius: 7px;
+}
+.fas {
+  padding-left: 15px;
+}
+#search {
+  margin-right: 8px;
+  background-color: #ff5400;
+}
+
+/* Banner styles ends here */
+
+/* Popular tour section start from here */
+.popular-tour {
+  display: flex;
+  margin-top: 30px;
+}
+
+.popular-tour img {
+  width: 400px;
+  height: 400px;
+}
+.popular-tour h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.popular-tour p {
+  margin-bottom: 20px;
+}
+
+.popular-tour li {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.popular-tour button {
+  padding: 15px;
+  border-radius: 8px;
+  margin-left: 10px;
+  background-color: #ff5400;
+  color: white;
+  border: none;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* Popular tour section Ends here */
+
+/* Destination section from here */
+.destination h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 30px;
+}
+.destination p {
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 30px;
+}
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 100px;
+}
+
+.grid-item1 p {
+  margin-top: -130px;
+  margin-left: 200px;
+  color: white;
+  font-size: 30px;
+}
+.grid-item2 img {
+  width: 100%;
+  height: 300px;
+}
+.grid-item2 p {
+  margin-top: -130px;
+  margin-left: 200px;
+  color: white;
+  font-size: 30px;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 100px;
+}
+
+.grid-item3 p {
+  margin-top: -130px;
+  margin-left: 140px;
+  color: white;
+  font-size: 30px;
+}
+.grid-item4 p {
+  margin-top: -130px;
+  margin-left: 140px;
+  color: white;
+  font-size: 30px;
+}
+.grid-item5 p {
+  margin-top: -130px;
+  margin-left: 100px;
+  color: white;
+  font-size: 30px;
+}
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 120px;
+}
+.grid-item6 p {
+  margin-top: -130px;
+  margin-left: 130px;
+  color: white;
+  font-size: 30px;
+}
+.grid-item7 p {
+  margin-top: -130px;
+  margin-left: 300px;
+  color: white;
+  font-size: 30px;
+}
+
+/* Destination section ends here */
+
+/* Why choose us section start from here */
+
+.choose h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.choose p {
+  text-align: center;
+  margin-top: 10px;
+
+  width: 50%;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  gap: 20px;
+  height: 200px;
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+.card h3 {
+  font-size: 25px;
+  font-weight: bold;
+}
+.card p {
+  padding-top: 10px;
+}
+
+.box1 {
+  background-color: rgba(173, 84, 54, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+}
+.box2 {
+  background-color: rgba(135, 207, 235, 0.342);
+  padding: 30px;
+  border-radius: 10px;
+}
+.box3 {
+  background-color: rgba(173, 84, 54, 0.1);
+  padding: 95px 25px;
+  border-radius: 10px;
+  width: 50%;
+  height: 230px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.box3 h3 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.box3 p{
+  padding-top: 15px;
+}
+
+/* Why choose us section ends here */
+
 /* Mobile responsive start from here */
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
+  body {
+    width: 650px;
+  }
+
   .logo p {
     font-size: 18px;
     display: flex;
@@ -60,7 +294,144 @@ nav ul li {
   }
   .fa-solid {
     visibility: visible;
-    margin-right: 30px;
+
     font-size: 25px;
   }
+  /* banner responsive start from here */
+  .banner {
+    width: 100%;
+    height: 500px;
+  }
+  .banner h1 {
+    font-size: 30px;
+    position: absolute;
+    top: 30%;
+  }
+  .banner p {
+    font-size: 16px;
+    text-align: start;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+  }
+  .button {
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* popular tour start from here */
+  .popular-tour {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .popular-tour img {
+    width: 100%;
+  }
+  .popular-tour button {
+    margin-bottom: 10px;
+  }
+  /* popular tour ends here */
+
+  /* Destination section start from here */
+
+  .destination h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  .grid1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .grid-item1 {
+    margin-bottom: 100px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+  .grid-item2 {
+    margin-bottom: 100px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 50px;
+  }
+
+  .grid2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .grid-item3 {
+    margin-bottom: 100px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+  .grid-item4 {
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+  .grid-item5 {
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
+  .grid3 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .grid-item6 {
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+
+  /* Destination section ends here */
+
+  /* why choose us section start from here */
+  .choose h1 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .choose p {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+  
+  .card{
+    flex-direction: column;
+  
+  }
+ .box3{
+  margin-top: 160px;
+  width: 100%;
+}
+
+
+
+  /* why choose us section ends here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
